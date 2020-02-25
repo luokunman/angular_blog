@@ -1,0 +1,24 @@
+<div id="main" class="content">
+	<div class="container">
+		<article itemscope="itemscope">
+			<div class="posts-list js-posts">
+				<div class="post post-layout-list" data-aos="fade-up" ng-repeat="item in userExp">
+					<div class="status_list_item icon_kyubo">
+						<div class="status_user" style="background-image: url(../assets/home/images/{{item.imgUrl}});">
+							<div class="status_section">
+								<a href="detail.html" class="status_btn">{{item.title}}</a>
+								<div class="review-item-creator"><b>发布日期：</b>{{item.createtime*1000 | date:"yyyy / MM / dd"}}</div>
+								<p class="section_p">{{item.content}}</p>
+								<a class="status_btn" href="">READ MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="poppin-more text-uppercase text-center">
+				<div class="more-btn">
+					<a href="javascript:;">MORE CONTENS</a>
+				</div>
+			</div>
+	</div>
+</div>

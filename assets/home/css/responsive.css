@@ -1,0 +1,187 @@
+
+/*----------------------------------------------------------------------- 
+table of content
+-------------------------------------------------------------------------* /
+
+
+File:           CSS Base
+Version:        1.1
+Last change:     
+Author:         HTMLmate
+
+
+*/
+
+/*-------- css code for responsive layout  --------*/
+/*  To make Responsive
+---------------------------------------------------------------------- /
+*   1 - media screen and (max-width: 1199px)
+*   2 - media screen and (max-width: 991px)
+*   3 - media screen and (max-width: 767px)
+*   4 - media screen and (max-width: 680px)
+*   5 - media screen and (max-width: 480px)
+*
+---------------------------------------------------------------------- 
+
+
+/*  1 - media screen and (max-width: 1199px)
+------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 1199px) {
+
+
+}
+
+
+@media screen and (max-width: 991px) {
+	.page-head-content {
+		left: 23%;
+	}
+	.latest-blog-text-pic {
+		max-width: 370px;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		display: table;
+	}
+	.contact-info-item input {
+		margin-right: 18px;
+	}
+	.section-title h2 {
+		font-size: 26px;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.page-head-content {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.container {
+		padding: 0 30px;
+	}
+	.item-grid{
+		width: 50%
+	}
+	#site-header {
+		padding: 20px 0px;
+	}
+	.page-head-section {
+		top: 85px;
+	}
+	.section-content {
+		padding: 50px 0px;
+	}
+	.contact-text span {
+		font-size: 20px;
+	}
+	.contact-map {
+		padding-top: 35px;
+	}
+	.contact-adress {
+		padding-top: 35px;
+	}
+	.service-text-icon {
+		max-width: 270px;
+		margin: 0 auto;
+		padding-bottom: 35px;
+		display: table;
+	}
+}  
+@media screen and (max-width: 580px) { 
+	.project-description h3 {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 480px) { 
+	.page-head-social {
+		height: 150px;
+	}
+	.newsletter-title h2 {
+		font-size: 30px;
+	}
+	.newsletter-title {
+		padding-bottom: 25px;
+	}
+	.newsletter-section {
+		padding-bottom: 65px;
+	}
+	.pt90 {
+		padding-top: 35px;
+	}
+	.pb75 {
+		padding-bottom: 35px;
+	}
+	.button-group button {
+		margin-right: 30px;
+	}
+	.section-title h2 {
+		font-size: 30px;
+	}
+	.contact-info-item input {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 420px) { 
+	.item-grid{
+		width: 100%
+	}
+	.page-head-section {
+		padding-bottom: 330px;
+	}
+	.page-head-social {
+		height: 90px;
+	}
+	#page-head-effect, #page-head-effect canvas {
+		height: 330px !important;
+	}
+	.page-head-title h1 {
+		font-size: 24px;
+	}
+	.portfolio-section {
+		padding-top: 70px;
+	}
+	.button-group button {
+		margin-right: 20px;
+		font-size: 14px;
+	}
+	.pb45 {
+		padding-bottom: 20px;
+	}
+	.blog-head h2 {
+		font-size: 18px;
+	}
+	.newsletter-title h2 {
+		font-size: 26px;
+	}
+	.section-title h2 {
+		font-size: 26px;
+	}
+	.footer-2 {
+		margin-top: 0;
+	}
+	.meta-list li a {
+		margin-right: 10px;
+	}
+	.scrollup,
+	.scrollup:before,
+	.scrollup:after{
+		border: none;
+		content: none;
+	}
+	.breadcrumb>li+li:before {
+		padding: 0px 4px;
+	}
+
+}
+
+@media screen and (max-width: 375px) { 
+.blog-main-text-pic {
+	max-width: 290px;
+	margin: 0 auto;
+	padding-bottom: 35px;
+}
+
+}

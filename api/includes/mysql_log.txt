@@ -1,0 +1,45 @@
+﻿[2019-07-09 06:26]Table 'blog_angular.pre_pre_imgcate' doesn't exist
+[2019-07-09 12:03]Table 'blog_angular.pre_rule' doesn't exist
+[2019-07-09 12:05]Table 'blog_angular.pre_rule' doesn't exist
+[2019-07-09 12:05]Table 'blog_angular.pre_rule' doesn't exist
+[2019-07-09 12:06]Unknown column 'url' in 'where clause'
+[2019-07-09 12:06]Unknown column 'url' in 'where clause'
+[2019-07-09 12:10]Unknown column 'url' in 'where clause'
+[2019-07-09 12:11]Unknown column 'url' in 'where clause'
+[2019-07-11 07:43]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2019-07-11 08:28]Unknown column 'pre_avatar' in 'field list'
+[2019-07-11 08:29]Unknown column 'pre_group.name' in 'field list'
+[2019-07-11 08:29]Unknown column 'pre_group.title' in 'field list'
+[2019-07-11 09:25]Incorrect integer value: '' for column 'groupid' at row 1
+[2019-07-11 09:26]Incorrect integer value: '' for column 'groupid' at row 1
+[2019-07-11 09:27]Incorrect integer value: '' for column 'groupid' at row 1
+[2019-07-11 20:26]Table 'blog_angular.pre_group' doesn't exist
+[2019-07-11 20:26]Unknown column 'auth' in 'field list'
+[2019-07-11 20:27]Unknown column 'auth' in 'field list'
+[2019-07-11 14:33]Table 'blog_angular.pre_group' doesn't exist
+[2019-07-12 12:25]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WhERE id = 1' at line 1
+[2019-07-12 12:25]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WhERE id = 1' at line 1
+[2019-07-12 12:26]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WhERE id = 1' at line 1
+[2019-07-12 12:26]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WhERE id = '1'' at line 1
+[2019-07-12 12:36]Table 'blog_angular.pre_rule' doesn't exist
+[2019-07-12 13:23]Unknown column 'name' in 'field list'
+[2019-07-13 06:59]Unknown column 'name' in 'field list'
+[2019-07-13 07:22]Incorrect integer value: '' for column 'ismenu' at row 1
+[2019-07-13 07:44]Incorrect integer value: '' for column 'ismenu' at row 1
+[2019-07-13 07:44]Incorrect integer value: '' for column 'ismenu' at row 1
+[2019-07-13 07:44]Incorrect integer value: '' for column 'ismenu' at row 1
+[2019-07-13 07:58]Unknown column 'groups' in 'field list'
+[2019-07-13 08:11]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:11]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:13]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:16]Unknown column 'website' in 'field list'
+[2019-07-13 08:20]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:20]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:24]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:27]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:30]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WhERE name = 'website'' at line 1
+[2019-07-13 08:31]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WhERE name = 'website'' at line 1
+[2019-07-13 08:32]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:33]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:33]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`values` = 'html,css,js,linux,php,vue,react'  WhERE name = 'keywords'' at line 1
+[2019-07-13 08:34]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's blog'  WhERE name = 'webname'' at line 1

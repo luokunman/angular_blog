@@ -1,0 +1,243 @@
+<!-- Start of page head section
+		============================================= -->
+<section id="page-head" class="page-head-section">
+	<div class="page-head-overlay"></div>
+	<div id="page-head-effect" class="page-head-effect">
+		<canvas id="demo-canvas"></canvas>
+	</div>
+	<!-- // page-head-style -->
+	<div class="container">
+		<div class="row">
+			<div class="banner-content">
+				<div class="page-head-content">
+					<div class="page-head-title text-capitalize pb40">
+						<h1>{{username}}</h1>
+						<span class="descrip">email:{{email|lowercase}}</span>
+					</div>
+					<!-- //title -->
+
+					<div class="page-head-social">
+						<div class="social-title text-uppercase">
+							<span>socials</span>
+						</div>
+						<!-- //title -->
+						<div class="page-head-social-item ul-li">
+							<ul class="page-head-social-list">
+								<li>
+									<a href="#">
+										<span class="ti-facebook"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="ti-twitter-alt"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="ti-google"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="ti-instagram"></span>
+									</a>
+								</li>
+							</ul>
+							<!-- /.page-head-social-list -->
+						</div>
+						<!-- /.page-head-social-item -->
+					</div>
+					<!-- /.page-head-social -->
+				</div>
+				<!-- /.page-head-content -->
+			</div>
+		</div>
+		<!--  /.row-->
+	</div>
+	<!--  /.container -->
+</section>
+<!-- End of page head section
+		============================================= -->
+
+<!-- Start of portfolio section
+		============================================= -->
+<section id="portfolio" class="portfolio-section">
+	<div class="container">
+		<div class="row">
+			<div class="portfolio-content">
+				<div class="portfolio-tab pb55">
+					<div id="filters" class="button-group pb45">
+						<button 
+							ng-repeat="item in imgcate" 
+							class="tab-button {{item.name == 'all' ? 'active' : ''}}" 
+							data-filter=".{{item.name=='all' ? '*' : item.name}}"
+							on-finish-render-filters
+							ng-click="workTab()">{{item.name}}
+						</button>
+					</div>
+					<!-- /tab-button -->
+
+					<div class="portfolio-tab-text-pic row">
+						<div id="posts">
+							<div ng-repeat="item in gallerys" id="{{item.id}}" class="item item-grid {{item.type}}" on-finish-render-filters>
+								<div class="item-wrap">
+									<div class="work-item">
+										<div class="work-pic">
+											<img src="../assets/uploads/usergallery/{{item.img}}" alt="image">
+										</div>
+										<!-- //img -->
+										<div class="hover-content">
+											<div class="hover-text text-center">
+												<a href="../assets/uploads/usergallery/{{item.img}}" data-lightbox="roadtrip">
+													<span class="ti-fullscreen"></span>
+												</a>
+											</div>
+											<!-- //light-box-img -->
+											<div class="project-description text-uppercase ul-li">
+												<h3>
+													<a href="#">{{item.content}}</a>
+												</h3>
+												<ul class="project-catagorry text-capitalize">
+													<li>
+														<a href="#">{{item.title}}</a>
+													</li>
+												</ul>
+											</div>
+											<!-- //project-description -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /item -->
+						</div>
+						<!--//posts-->
+					</div>
+					<!--//portfolio-tab-text-pic-->
+				</div>
+				<!--//portfolio-tab-->
+
+
+				<div class="poppin-more text-uppercase text-center">
+					<div class="more-btn">
+						<a href="javascript:;">MORE CONTENS</a>
+					</div>
+				</div>
+				<!-- //.more -->
+
+			</div>
+			<!--//portfolio-content -->
+		</div>
+		<!--  /.row -->
+	</div>
+	<!--  /.conatiner -->
+</section>
+<!-- End of portfolio section
+		============================================= -->
+
+<!-- Start of newsletter section
+				============================================= -->
+<section id="newsletter" class="newsletter-section">
+	<div class="page-head-overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="newsletter-section-content">
+				<div class="newsletter-title pb75">
+					<h2 class="deep-black">search title</h2>
+				</div>
+
+				<div class="newsletter-form">
+					<form method="GET" action=""  ng-submit="titleSearch()" class="input-group">
+						<input type="text" class="form-control" name="title_keywords" ng-model="title_keywords" placeholder="Enter Title">
+						<span class="input-group-addon">
+							<button type="submit">
+								<span class="deep-black ti-arrow-right"></span>
+							</button>
+						</span>
+					</form>
+				</div>
+			</div>
+			<!-- //.newsletter-section-content -->
+
+		</div>
+		<!--  /.row -->
+	</div>
+	<!--  /.conatainer -->
+</section>
+<!-- End of newsletter section
+				============================================= -->
+
+<!-- Start of our service section
+		============================================= -->
+<section id="service" class="service-section pt90 pb40">
+	<div class="container">
+		<div class="row">
+			<div class="section-title text-capitalize deep-black pb75">
+				<h2>News artcle</h2>
+			</div>
+			<!-- //title -->
+
+			<div class="latest-blog-content">
+				<div class="row">
+
+					<div ng-repeat="item in articles" class="col-md-4">
+						<div class="latest-blog-text-pic">
+							<div class="latest-blog-img mb10">
+								<img style="width:370px;height:280px;" src="../assets/uploads/usergallery/{{item.img}}" alt="img">
+								<div class="blog-meta mt20 ul-li">
+									<ul class="meta-list">
+										<li>
+											<a href="#">{{item.createtime*1000 | date:"yyyy / MM / dd"}} / </a>
+										</li>
+										<li>
+											<a href="#"> {{username}} / </a>
+										</li>
+										<li>
+											<a href="#">{{item.name}}</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- //.latest-blog-img -->
+
+							<div class="latest-blog-text">
+								<div class="blog-head">
+									<h2>
+										<a href="#">{{item.title}}</a>
+									</h2>
+								</div>
+								<!-- //.blog-head -->
+								<div class="blog-details mt15">
+									<p>
+										{{item.content}}
+									</p>
+								</div>
+								<!-- //.blog-details -->
+								<div class="blog-read-more text-capitalize pull-left">
+									<a href="#">read more
+										<span class="ti-arrow-right"></span>
+									</a>
+								</div>
+								<!-- //.blog-read-more -->
+							</div>
+
+						</div>
+						<!-- //.latest-blog-text-pic -->
+					</div>
+					<!-- //.col-md-4 -->
+
+
+				</div>
+				<!-- //.row -->
+			</div>
+			<!-- //.latest-blog-content -->
+
+
+		</div>
+		<!--  row -->
+	</div>
+	<!--  container-->
+</section>
+<!-- End of our service section
+		============================================= -->
+

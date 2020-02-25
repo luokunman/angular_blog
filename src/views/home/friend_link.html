@@ -1,0 +1,141 @@
+
+
+<!-- Start of page head section
+		============================================= -->
+<section id="page-head" class="page-head-section" ngRepeatFinished>
+	<div class="page-head-overlay"></div>
+	<div id="page-head-effect" class="page-head-effect">
+		<canvas id="demo-canvas"></canvas>
+	</div>
+	<!-- // page-head-style -->
+	<div class="container">
+		<div class="row">
+			<div class="page-head-content text-center">
+				<div class="page-head-title text-capitalize">
+					<h1>Frinend Links</h1>
+				</div>
+				<!-- //title -->
+
+				<div class="breadcrumb-item   text-capitalize">
+					<ul class="breadcrumb">
+						<li>
+							<a ui-sref="home">Home</a>
+						</li>
+						<li>blog</li>
+					</ul>
+				</div>
+				<!-- /.breadcrumb-item -->
+			</div>
+			<!-- /.page-head-content -->
+		</div>
+		<!--  /.row-->
+	</div>
+	<!--  /.container -->
+</section>
+<!-- End of page head section
+		============================================= -->
+
+
+<!-- Start of blog page section
+		============================================= -->
+<section id="blog-main" class="blog-main-section" on-finish-render-filters>
+	<div class="container">
+		<div class="row section-content">
+			<div class="blog-main-content">
+				<div ng-repeat="item in linklist" class="blog-main-text-pic" style="display: inline-block;">
+					<div class="blog-item-content">
+						<div class="blog-main-pic">
+							<img style="width:115px;height:100px;border-radius: 50%;" src="..{{item.avatar}}" alt="img">
+						</div>
+						<!-- //blog-pic -->
+						<div class="blog-main-text">
+							<div class="blog-meta mt20 ul-li">
+								<ul class="meta-list">
+									<li>
+										<a href="#">{{item.createtime*1000 | date:"yyyy / MM / dd"}} / </a>
+									</li>
+									<li>
+										<a href="#"> {{item.name}} / </a>
+									</li>
+									<li>
+										<a href="#">{{item.desc}}</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="blog-read-more mt15 text-capitalize">
+								<a href="{{item.url}}">read more
+									<span class="ti-arrow-right"></span>
+								</a>
+							</div>
+						</div>
+						<!-- // .blog-main-text -->
+					</div>
+				</div>
+				<!-- //.blog-main-text-pic -->
+			</div>
+			<!-- // .blog-main-content -->
+
+
+			<div class="blog-pagination text-center">
+				<ul 
+					class="pagination"
+					uib-pagination
+					total-items="totalItems"
+					ng-model="currentPage"
+					items-per-page="bigTotalItems"
+					max-size="maxSize"
+					ng-change="pageChanged()">
+					<!-- <li>
+						<a href="#">
+							<span class="ti-arrow-left"></span>
+						</a>
+					<li ng-repeat="(key,item) in linklist">
+						<a href="#">{{key+1}}</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ti-arrow-right"></span>
+						</a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+		<!--  /.row -->
+	</div>
+	<!--  /.container-->
+</section>
+<!-- End of blog page section	
+		============================================= -->
+
+
+
+
+
+
+<!-- Start of footer section
+		============================================= -->
+<footer>
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="copy-right-area text-center">
+					<span>©
+					</span>
+				</div>
+				<!-- //copy-right-area -->
+			</div>
+			<!--  /.container -->
+		</div>
+		<!--  /.row-->
+		<div class="up">
+			<a href="#" id="scrolluptop" class="scrollup">
+				<span class="back-top deep-black text-uppercase">back top</span>
+			</a>
+		</div>
+	</div>
+	<!--  /.footer-area -->
+
+</footer>
+<!-- End of footer section
+		============================================= -->

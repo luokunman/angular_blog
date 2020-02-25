@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html ng-app="blog">
+
+<head>
+    <meta charset="utf-8">
+    <title>blog</title>
+    <meta name="description" content="welcome to rouken's blog">
+    <meta name="keywords" content="Premium HTML Template">
+    <meta name="author" content="HTMLmate">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css-include -->
+    <link rel="icon" href="../assets/home/img/logo/logo.png">
+    <!-- boorstrap -->
+    <link rel="stylesheet" type="text/css" href="../assets/home/css/bootstrap.min.css">
+    <!-- themify-icon.css -->
+    <link rel="stylesheet" type="text/css" href="../assets/home/css/themify-icons.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" type="text/css" href="../assets/home/css/owl.carousel.css">
+    <!-- light-box -->
+    <link rel="stylesheet" type="text/css" href="../assets/home/css/lightbox.css">
+    <!-- video css -->
+    <link rel="stylesheet" type="text/css" href="../assets/home/css/video.min.css">
+    <!-- menu.css -->
+    <link rel="stylesheet" type="text/css" href="../assets/home/css/menu.css">
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../assets/home/css/style.css">
+    <!-- responsive.css -->
+    <link rel="stylesheet" type="text/css" href="../assets/home/css/responsive.css">
+    <!-- font-awesome.css -->
+	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- login.css -->
+    <link rel="stylesheet" href="../assets/home/css/login.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/home/css/index.css" media="all" />
+    
+</head>
+
+
+
+
+<body class="about single-page" ng-repeat-finished>
+    
+    <div id="preloader"></div>
+    
+
+    <!-- Start of nav bar 
+    		============================================= -->
+    <nav id="poppin-nav">
+        <div id="nav-off"></div>
+        <div id="header-logo-1" class="text-center">
+            <a href="#">
+                <img style="width:43px;height:45px;border-radius:50%;" src="../assets/uploads/useravatar/{{avatar}}">
+            </a>
+        </div>
+        <ul id="menu">
+            <li ng-if="username">
+                <span>{{username}}</span>
+            </li>
+            <li class="has-submenu text-capitalize">
+                <a ui-sref="home">home</a>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Blog
+                    <span class="ti-angle-down"></span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a ui-sref="friend_link">friend_link</a>
+                    </li>
+                    <li>
+                        <a ui-sref="blog-single">Single Post</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a ui-sref="aboutme">Experience</a>
+            </li>
+            <li ng-if="noUser">
+                <a ui-sref="login">Login</a>
+            </li>
+            <li ng-if="noUser">
+                <a ui-sref="register">Register</a>
+            </li>
+            <li ng-if="isUser">
+                <a ui-sref="login">Logout</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="menu-overlay"></div>
+    <!-- End of nav bar 
+            ============================================= -->
+            
+
+    <!-- Start of header
+    		============================================= -->
+    <header id="site-header" class="not-stuck">
+        <div class="container">
+            <div class="row">
+                <div id="header-logo">
+                    <a href="#">
+                        <img src="../assets/home/img/logo/logo.png" alt="img">
+                    </a>
+                </div>
+    
+                <div id="menu-burger" class="pull-right not-stuck">
+                    <div id="menu-bar">
+                        <span class="icon-bar top"></span>
+                        <span class="icon-bar middle"></span>
+                        <span class="icon-bar bottom"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of header
+    		============================================= -->
+
+    <!-- ui-view -->
+    <ui-view></ui-view>
+
+    <!-- Start of footer section
+            ============================================= -->
+    <footer>
+        <div class="footer-area footer-2">
+            <div class="container">
+                <div class="row">
+                    <div class="copy-right-area text-center">
+                        <div class="page-head-social-item ul-li">
+                            <ul class="page-head-social-list">
+                                <li>
+                                    <a href="#">
+                                        <span class="ti-facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="ti-twitter-alt"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="ti-google"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="ti-instagram"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /.page-head-social-list -->
+                        </div>
+                    </div>
+                    <!-- //copy-right-area -->
+                </div>
+                <!--  /.container -->
+            </div>
+            <!--  /.row-->
+        </div>
+        <!--  /.footer-area -->
+    </footer>
+    <!-- End of footer section
+            ============================================= -->
+
+            
+            
+</body>
+</html>
+
+<!-- templar-vender -->
+<!--  Js Library -->
+<script src="../assets/home/js/jquery-2.1.4.min.js"></script>
+<!-- Include  for bootstrap -->
+<script src="../assets/home/js/bootstrap.min.js"></script>
+<!-- Include  for wow.js -->
+<script src="../assets/home/js/wow.min.js"></script>
+
+<!-- Include Mesonary Grid -->
+<script src="../assets/home/js/masonry.pkgd.min.js"></script>
+<script src="../assets/home/js/masonry-docs.min.js"></script>
+
+<!-- Include isotope Js -->
+<script src="../assets/home/js/jquery.isotope.min.js"></script>
+<!-- Include lightbox -->
+<script src="../assets/home/js/lightbox.js"></script>
+<!-- Include circle-effect.js -->
+<script src="../assets/home/js/circle-effect.js"></script>
+<!-- Include Video js -->
+<script src="../assets/home/js/jquery.magnific-popup.min.js"></script>
+<!-- Include Owl-carousel -->
+<script src="../assets/home/js/owl.carousel.min.js"></script>
+<!-- Include Counter up -->
+<script src="../assets/home/js/jquery.counterup.min.js"></script>
+<script src="../assets/home/js/waypoints.min.js"></script>
+
+
+<script type='text/javascript' src='../assets/home/js/plugins.js'></script>
+<!-- <script type='text/javascript' src='../assets/home/js/particles.js'></script> -->
+<script type='text/javascript' src='../assets/home/js/aos.js'></script>
+<!-- Include script.js -->
+<script src="../assets/home/js/script.js"></script>
+
+
+
+<!-- vender -->
+<script src="../assets/vendor/angular/angular.min.js"></script>
+
+<!-- router-vender -->
+<script src="../assets/vendor/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../assets/vendor/angular-ui-bootstrap.js"></script>
+<script src="../assets/vendor/angular-sanitize.min.js"></script>
+<script src="../assets/vendor/angular-cookies.min.js"></script>
+
+<!-- code -->
+<script src="../src/app-home.js"></script>
+<script src="../src/routers/router-home.js"></script>
+<script src="../src/services/onFinishRenderFilters.js"></script>
+<script src="../src/services/pretreatment-service.js"></script>
+<script src="../src/services/encrypt.js"></script>
+<script src="../src/services/page-service.js"></script>
+<script src="../assets/home/js/password.js"></script>
+
+<!-- controller -->
+<script src="../src/controllers/home/homeController.js"></script>
+
